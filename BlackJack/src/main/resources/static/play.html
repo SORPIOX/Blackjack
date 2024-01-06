@@ -1,0 +1,51 @@
+<!-- bet_and_play.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack - Place Your Bet and Play</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="home.html" class="back-button">Back</a>
+<div class="container">
+    <h2>Blackjack Game</h2>
+
+    <!-- Bet Section -->
+    <div class="bet-section">
+        <h3>Place Your Bet</h3>
+        <form action="bet" method="post">
+            <label for="betAmount">Enter your bet amount:</label>
+            <input type="number" id="betAmount" name="betAmount" required min="1">
+            <input type="submit" value="Start Game" class="button">
+        </form>
+    </div>
+
+    <!-- Game Section (hidden initially) -->
+    <div class="game-section" style="display: none;">
+        <h3>Blackjack Game</h3>
+        <!-- Add the game UI elements here -->
+        <p>Game in progress...</p>
+        <button onclick="stand()">Stand</button>
+        <button onclick="hit()">Hit</button>
+        <!-- ... other game elements ... -->
+    </div>
+</div>
+
+<script>
+    // JavaScript functions for game actions (stand, hit, etc.)
+    function stand() {
+        // Add logic for standing in the game
+        console.log('Player stands.');
+    }
+
+    function hit() {
+        // Add logic for hitting in the game
+        console.log('Player hits.');
+    }
+
+    // Add more game-related JavaScript functions as needed
+</script>
+</body>
+</html>
